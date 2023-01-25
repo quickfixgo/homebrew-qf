@@ -5,20 +5,20 @@
 class Qf < Formula
   desc "Example QuickFIX/Go Applications."
   homepage "https://github.com/quickfixgo/examples"
-  version "2.0.25"
+  version "2.0.26"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/quickfixgo/examples/releases/download/v2.0.25/qf_2.0.25_Darwin_arm64.tar.gz"
-      sha256 "2042e287a410cc5afca5c48dee25d9a1befaf908b6b65c8175cb643eada7238a"
+      url "https://github.com/quickfixgo/examples/releases/download/v2.0.26/qf_2.0.26_Darwin_arm64.tar.gz"
+      sha256 "a40e5f09ccb4a737b88e9b7039977bcf013a79ab4299cfcdf9cb18c06e254871"
 
       def install
         bin.install "qf"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quickfixgo/examples/releases/download/v2.0.25/qf_2.0.25_Darwin_x86_64.tar.gz"
-      sha256 "b9ad4c4d88222c8590f1c9e929a82a5e9664ada4144c8517b728492d306bfe2f"
+      url "https://github.com/quickfixgo/examples/releases/download/v2.0.26/qf_2.0.26_Darwin_x86_64.tar.gz"
+      sha256 "5afaec9956a7c30eaba3796a439751bf0236cc3a944baa8049e9f5f7f2cf91fc"
 
       def install
         bin.install "qf"
@@ -28,16 +28,16 @@ class Qf < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/quickfixgo/examples/releases/download/v2.0.25/qf_2.0.25_Linux_arm64.tar.gz"
-      sha256 "6b982c889a7ba545cb1996d6a6cfe00979dfcda9d7f2d75a2686333fc4c535ef"
+      url "https://github.com/quickfixgo/examples/releases/download/v2.0.26/qf_2.0.26_Linux_arm64.tar.gz"
+      sha256 "ee9b985a87d49c186753b3f745f86e119703272b3f6ddf690a87094d0a4dae52"
 
       def install
         bin.install "qf"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quickfixgo/examples/releases/download/v2.0.25/qf_2.0.25_Linux_x86_64.tar.gz"
-      sha256 "c9bda2c7afda7831a421e0bfa86f06bb75b698be2a17723df9dfce11bf9051ae"
+      url "https://github.com/quickfixgo/examples/releases/download/v2.0.26/qf_2.0.26_Linux_x86_64.tar.gz"
+      sha256 "6445e427dab3fab00292a708c6e3d74d18472e56d90cac662ef397cbbd02bcee"
 
       def install
         bin.install "qf"
